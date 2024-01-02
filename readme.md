@@ -1,4 +1,4 @@
-# Arduino + Weeemake 
+# Arduino-cli + Weeemake 
 This is a side by side install of arduino-cli and third-party library Weeemake
 
 ### How to Build Side-By-Side
