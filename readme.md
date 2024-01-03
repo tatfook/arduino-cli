@@ -7,8 +7,10 @@ Use `arduino-cli core install` with a local config file like below.
 arduino-cli --config-file .\arduino-cli.yaml core update-index
 arduino-cli --config-file .\arduino-cli.yaml core install arduino:avr
 ```
-After above commands, you can distribute the entire zip directory and run commands like below to build any arduino files. 
-
+After above commands, you can distribute the entire zip directory and run commands like below to build any arduino files. Or you can simply run setup.bat in the folder, which will compress everything to arduino_local.zip. 
+```
+setup.bat
+```
 ### How to build
 Make sure you deployed all files in the git repo after running above build commands in a folder with without special characters. 
 
