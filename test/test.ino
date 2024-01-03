@@ -4,7 +4,6 @@
 // arduino-cli --config-file .\arduino-cli.yaml core install arduino:avr
 // arduino-cli --config-file .\arduino-cli.yaml compile --library Weeemake --fqbn arduino:avr:uno test & arduino-cli --config-file .\arduino-cli.yaml upload -p COM5 --fqbn arduino:avr:uno test
 
-
 #include<WeELFMini.h>
 WeDCMotor dc_1(M1);
 WeDCMotor dc_2(M2);
@@ -12,13 +11,11 @@ WeServo servo_A(PORT_A);
 
 void setup(){
     Serial.begin(115200);
-
-    
     Serial.println('hello world!!');
-
 }
 void loop(){
-    // Serial.println('tick');
+    Serial.println('tick');
+    delay(1000);
     /*
     dc_1.run(-50);
     dc_2.run(-50);
@@ -28,6 +25,5 @@ void loop(){
     servo_A.write(0);
     delay(1000);
     servo_A.write(90);
-    delay(1000);
     */
 }
